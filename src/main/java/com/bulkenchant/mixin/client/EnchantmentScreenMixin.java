@@ -5,9 +5,8 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import com.bulkenchant.BulkEnchantNetworking;
+import com.bulkenchant.client.BulkEnchantMacro;
 
-import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.screen.ingame.EnchantmentScreen;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
@@ -42,7 +41,7 @@ public abstract class EnchantmentScreenMixin extends HandledScreen<EnchantmentSc
 			double e = mouseY - (j + 14 + 19 * k);
 			if (d >= 0.0 && e >= 0.0 && d < 108.0 && e < 19.0) {
 				if (this.handler.enchantmentPower[k] > 0) {
-					ClientPlayNetworking.send(new BulkEnchantNetworking.EnchantAllPayload(this.handler.syncId, k));
+					BulkEnchantMacro.startEnchantAll(this.handler.syncId, k);
 				}
 				cir.setReturnValue(true);
 				return;

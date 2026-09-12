@@ -3,23 +3,19 @@
 	"id": "bulkenchant",
 	"version": "${version}",
 	"name": "Bulk Enchant",
-	"description": "Enchante ou désenchante tout l'inventaire en un seul clic, depuis la table d'enchantement et la meule.",
+	"description": "Enchante ou désenchante tout l'inventaire en un seul clic, depuis la table d'enchantement et la meule. 100% côté client : fonctionne sur n'importe quel serveur, rien à installer côté serveur.",
 	"authors": [
 		"yanis.stey"
 	],
 	"contact": {},
 	"license": "CC0-1.0",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
-		"main": [
-			"com.bulkenchant.BulkEnchantMod"
-		],
 		"client": [
 			"com.bulkenchant.client.BulkEnchantClientMod"
 		]
 	},
 	"mixins": [
-		"bulkenchant.mixins.json",
 		"bulkenchant.client.mixins.json"
 	],
 	"depends": {
