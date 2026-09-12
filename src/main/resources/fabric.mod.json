@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "bulkenchant",
+	"version": "${version}",
+	"name": "Bulk Enchant",
+	"description": "Enchante ou désenchante tout l'inventaire en un seul clic, depuis la table d'enchantement et la meule.",
+	"authors": [
+		"yanis.stey"
+	],
+	"contact": {},
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.bulkenchant.BulkEnchantMod"
+		],
+		"client": [
+			"com.bulkenchant.client.BulkEnchantClientMod"
+		]
+	},
+	"mixins": [
+		"bulkenchant.mixins.json",
+		"bulkenchant.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"fabric-api": "*",
+		"minecraft": "~1.21.8",
+		"java": ">=21"
+	}
+}

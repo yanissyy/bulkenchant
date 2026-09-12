@@ -1,0 +1,8 @@
+{
+	"bulkenchant.hint.shift_click": "Maj+clic : tout enchanter",
+	"bulkenchant.button.disenchant_all": "Tout désenchanter",
+	"bulkenchant.button.disenchant_all.tooltip": "Retire les enchantements de tous les objets enchantés de votre inventaire (donne l'expérience)",
+	"bulkenchant.message.not_enough_levels": "Pas assez de niveaux d'expérience pour enchanter tout l'inventaire",
+	"bulkenchant.message.not_enough_lapis": "Pas assez de lapis-lazuli pour enchanter tout l'inventaire",
+	"bulkenchant.message.no_items": "Aucun objet compatible trouvé dans l'inventaire"
+}

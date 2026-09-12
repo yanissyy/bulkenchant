@@ -1,0 +1,8 @@
+{
+	"bulkenchant.hint.shift_click": "Shift+click: enchant all",
+	"bulkenchant.button.disenchant_all": "Disenchant All",
+	"bulkenchant.button.disenchant_all.tooltip": "Removes enchantments from every enchanted item in your inventory (grants experience)",
+	"bulkenchant.message.not_enough_levels": "Not enough experience levels to enchant the whole inventory",
+	"bulkenchant.message.not_enough_lapis": "Not enough lapis lazuli to enchant the whole inventory",
+	"bulkenchant.message.no_items": "No compatible items found in the inventory"
+}

@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "com.bulkenchant.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [],
+	"client": [
+		"EnchantmentScreenMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
